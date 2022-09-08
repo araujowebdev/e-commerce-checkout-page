@@ -1,0 +1,106 @@
+main {
+  position: relative;
+
+  div.shopping-summary {
+    position: absolute;
+    right: 0;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+
+    &__item:nth-child(1) {
+      margin-bottom: 32px;
+    }
+
+    &__item:nth-child(2) {
+      margin-bottom: 90px;
+    }
+
+    &__item {
+      display: flex;
+      gap: 20px;
+
+      &-img {
+        max-width: 134px;
+
+        img {
+          max-width: 100%;
+          border-radius: 13px;
+        }
+      }
+
+      &-info {
+        position: relative;
+
+        h3 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          color: #4e5150;
+          margin-bottom: 6px;
+        }
+
+        div:nth-child(2) {
+          span:nth-child(1) {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #f2994a;
+            margin-right: 10px;
+          }
+
+          span:nth-child(2) {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            text-decoration: line-through;
+            color: #4e5150;
+          }
+        }
+
+        div:nth-child(3) {
+          width: 135px;
+          height: 50px;
+          border: 1px solid #828282;
+          border-radius: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          position: absolute;
+          bottom: 0;
+
+          button {
+            width: 20px;
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    ul {
+      li {
+        border-top: 1px solid #bdbdbd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+
+        span:nth-child(1) {
+          font-weight: 600;
+          font-size: 18px;
+          color: #333;
+        }
+        
+        span:nth-child(2) {
+          font-weight: 600;
+          font-size: 14px;
+          color: #333;
+        }
+      }
+    }
+  }
+}
