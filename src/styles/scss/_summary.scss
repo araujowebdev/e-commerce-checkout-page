@@ -1,9 +1,11 @@
 main {
-  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 
   div.shopping-summary {
-    position: absolute;
-    right: 10px;
+    width: 380px;
+    height: 540px;
     padding: 30px;
     background-color: #f2f2f2;
     border-radius: 12px;
@@ -32,6 +34,7 @@ main {
       &-info {
         position: relative;
 
+        // item name
         h3 {
           font-weight: 600;
           font-size: 16px;
@@ -40,6 +43,7 @@ main {
           margin-bottom: 6px;
         }
 
+        // item new price
         div:nth-child(2) {
           span:nth-child(1) {
             font-weight: 600;
@@ -49,6 +53,7 @@ main {
             margin-right: 10px;
           }
 
+          // item old price
           span:nth-child(2) {
             font-weight: 600;
             font-size: 12px;
@@ -105,11 +110,12 @@ main {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 860px) {
   main {
+    flex-direction: column;
+
     div.shopping-summary {
-      position: unset;
-      padding: 0;
+      margin: 0 auto 50px;
 
       &__item:nth-child(1) {
         margin-bottom: 28px;
