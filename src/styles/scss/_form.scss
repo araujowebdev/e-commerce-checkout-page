@@ -1,0 +1,159 @@
+main {
+  .form {
+    width: 465px;
+    position: relative;
+
+    &__group {
+      &:first-child {
+        margin-bottom: 60px;
+      }
+
+      h2 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      div {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        label {
+          display: block;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 15px;
+          color: #4f4f4f;
+          margin-bottom: 7px;
+        }
+
+        .field {
+          width: 100%;
+          height: 56px;
+          border: 1px solid #828282;
+          border-radius: 12px;
+          padding-left: 10px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          span {
+            color: #828282;
+          }
+
+          input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: none;
+
+            &::placeholder {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 20px;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+
+      .divided {
+        display: flex;
+        gap: 40px;
+      }
+    }
+
+    .save-user-info-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+
+      label {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        color: #4f4f4f;
+      }
+    }
+
+    button {
+      background-color: #f2994a;
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      border-radius: 12px;
+      padding: 17px 45px;
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  main {
+    .form {
+      width: 100%;
+
+      &__group {
+        &:first-child {
+          margin-bottom: 45px;
+        }
+
+        h2 {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 10px;
+        }
+
+        div {
+          &:not(:last-child) {
+            margin-bottom: 16px;
+          }
+
+          label {
+            font-size: 10px;
+            line-height: 12px;
+            margin-bottom: 5px;
+          }
+
+          .field {
+            height: 40px;
+            gap: 12px;
+
+            input {
+              &::placeholder {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .divided {
+          gap: 20px;
+
+          div {
+            width: 100%;
+          }
+        }
+      }
+
+      .save-user-info-checkbox {
+        gap: 6px;
+
+        label {
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+}
