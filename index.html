@@ -27,6 +27,7 @@
   <main class="container">
     <!-- Shopping Summary -->
     <div class="shopping-summary">
+
       <div class="shopping-summary__item">
         <div class="shopping-summary__item-img">
           <img src="./dist/assets/imgs/photo1.png" alt="Vintage Backbag">
@@ -34,13 +35,13 @@
         <div class="shopping-summary__item-info">
           <h3>Vintage Backbag</h3>
           <div>
-            <span>$ 54.99</span>
+            <span>$ <span class="item-price">54.99</span></span>
             <span>$ 94.99</span>
           </div>
           <div>
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
+            <button class="btn-minus">-</button>
+            <span class="number-items">1</span>
+            <button class="btn-plus">+</button>
           </div>
         </div>
       </div>
@@ -52,13 +53,13 @@
         <div class="shopping-summary__item-info">
           <h3>Levi Shoes</h3>
           <div>
-            <span>$ 74.99</span>
+            <span>$ <span class="item-price">74.99</span></span>
             <span>$ 124.99</span>
           </div>
           <div>
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
+            <button class="btn-minus">-</button>
+            <span class="number-items">1</span>
+            <button class="btn-plus">+</button>
           </div>
         </div>
       </div>
@@ -70,7 +71,7 @@
         </li>
         <li>
           <span>Total</span>
-          <span>$ 148.98</span>
+          <span>$ <span id="total-value">148.98</span></span>
         </li>
       </ul>
     </div>
