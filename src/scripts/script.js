@@ -1,9 +1,8 @@
-let btnMinus = document.querySelectorAll(".btn-minus");
-let btnPlus = document.querySelectorAll(".btn-plus");
 let qttItems = document.querySelectorAll(".number-items");
 let itemPrice = document.querySelectorAll(".item-price");
-let totalValue = document.querySelector("#total-value");
-const shiping = 19;
+
+// Increases the number of items and their total value according to the clicks the btnPlus button receives.
+let btnPlus = document.querySelectorAll(".btn-plus");
 
 btnPlus.forEach((btn, index) => {
   btn.addEventListener("click", () => {
@@ -16,6 +15,9 @@ btnPlus.forEach((btn, index) => {
     totalV();
   });
 });
+
+// Decreases the number of items and their total value according to the clicks the btnPlus button receives.
+let btnMinus = document.querySelectorAll(".btn-minus");
 
 btnMinus.forEach((btn, index) => {
   btn.addEventListener("click", () => {
@@ -30,6 +32,10 @@ btnMinus.forEach((btn, index) => {
     }
   });
 });
+
+// Updates the total amount of the customer's purchases.
+let totalValue = document.querySelector("#total-value");
+const shiping = 19;
 
 function totalV() {
   let itemPriceSum = 0;
