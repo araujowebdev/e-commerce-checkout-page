@@ -44,3 +44,29 @@ function totalV() {
   }
   totalValue.textContent = (itemPriceSum + shiping).toFixed(2);
 }
+
+// Form feedback
+const email = document.querySelector("#email");
+const phone = document.querySelector("#phone");
+const fullName = document.querySelector("#full-name");
+const address = document.querySelector("#address");
+const city = document.querySelector("#city");
+const country = document.querySelector("#country");
+const postalCode = document.querySelector("#postal-code");
+const btnContinue = document.querySelector(".btn-continue");
+
+btnContinue.addEventListener("click", () => {
+  if (
+    email.value == "" ||
+    phone.value == "" ||
+    fullName.value == "" ||
+    address.value == "" ||
+    city.value == "" ||
+    country.value == "" ||
+    postalCode.value == ""
+  ) {
+    alert("Failed! Try again!");
+  } else {
+    alert("Success!");
+  }
+});
