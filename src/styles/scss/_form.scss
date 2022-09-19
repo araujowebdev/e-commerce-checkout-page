@@ -9,9 +9,7 @@ main {
       }
 
       h2 {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
+        font: 600 1.125rem/1.375rem "Montserrat", sans-serif;
         color: #333;
         margin-bottom: 15px;
       }
@@ -23,9 +21,7 @@ main {
 
         label {
           display: block;
-          font-weight: 600;
-          font-size: 12px;
-          line-height: 15px;
+          font: 600 0.75rem/0.9375rem "Montserrat", sans-serif;
           color: #4f4f4f;
           margin-bottom: 7px;
         }
@@ -51,9 +47,7 @@ main {
             background: none;
 
             &::placeholder {
-              font-weight: 600;
-              font-size: 16px;
-              line-height: 20px;
+              font: 600 1rem/1.25rem "Montserrat", sans-serif;
             }
 
             &:focus {
@@ -76,9 +70,7 @@ main {
       margin-bottom: 20px;
 
       label {
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 15px;
+        font: 600 0.75rem/0.9375rem "Montserrat", sans-serif;
         color: #4f4f4f;
       }
     }
@@ -86,8 +78,7 @@ main {
     button {
       background-color: #f2994a;
       color: #fff;
-      font-weight: 600;
-      font-size: 16px;
+      font: 600 1rem/1rem "Montserrat", sans-serif;
       border-radius: 12px;
       padding: 17px 45px;
       position: absolute;
@@ -108,9 +99,7 @@ main {
         }
 
         h2 {
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 17px;
+          font: 600 0.875rem/1.0625rem "Montserrat", sans-serif;
           margin-bottom: 10px;
         }
 
@@ -120,8 +109,8 @@ main {
           }
 
           label {
-            font-size: 10px;
-            line-height: 12px;
+            font-size: 0.625rem;
+            line-height: 0.75rem;
             margin-bottom: 5px;
           }
 
@@ -131,7 +120,7 @@ main {
 
             input {
               &::placeholder {
-                font-size: 12px;
+                font-size: 0.75rem;
               }
             }
           }
@@ -150,8 +139,8 @@ main {
         gap: 6px;
 
         label {
-          font-size: 10px;
-          line-height: 12px;
+          font-size: 0.625rem;
+          line-height: 0.75rem;
         }
       }
     }
