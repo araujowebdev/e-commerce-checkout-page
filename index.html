@@ -77,7 +77,7 @@
     </div>
 
     <!-- Form -->
-    <form action="./ " class="form">
+    <form action="./ " class="form" id="form">
       <div class="form__group">
         <h2>Contact information</h2>
         <div>
@@ -86,7 +86,7 @@
             <span class="material-symbols-outlined">
               mail
             </span>
-            <input id="email" type="email" placeholder="Enter your email..." required>
+            <input id="email" type="email" placeholder="Enter your email..." required autocomplete="email">
           </div>
         </div>
         <div>
@@ -108,7 +108,7 @@
             <span class="material-symbols-outlined">
               account_circle
             </span>
-            <input id="full-name" type="text" placeholder="Enter your full name..." required>
+            <input id="full-name" type="text" placeholder="Enter your full name..." required autocomplete="name">
           </div>
         </div>
 
@@ -155,7 +155,7 @@
               <span class="material-symbols-outlined">
                 markunread_mailbox
               </span>
-              <input id="postal-code" type="number" placeholder="Your postal code..." required>
+              <input id="postal-code" type="number" placeholder="Your postal code..." required autocomplete="postal-code">
             </div>
           </div>
         </div>
@@ -166,7 +166,7 @@
         <label for="save-info">Save this information for next time</label>
       </div>
 
-      <button class="btn-continue">Continue</button>
+      <button class="btn-continue" form="form">Continue</button>
     </form>
   </main>
 
